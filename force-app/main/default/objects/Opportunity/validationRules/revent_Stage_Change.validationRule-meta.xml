@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>revent_Stage_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()), ISCHANGED(StageName), ISPICKVAL(StageName, "Prospecting"), Amount &lt; 235000)</errorConditionFormula>
+    <errorMessage>Amount less then 235k</errorMessage>
+</ValidationRule>

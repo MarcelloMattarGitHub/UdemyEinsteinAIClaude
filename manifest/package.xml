@@ -59,6 +59,14 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Opp_Prospecting_Follow_Up_Task</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Opportunity.revent_Stage_Change</members>
+		<name>ValidationRule</name>
+	</types>
+	<types>
 		<members>Soft_Drink_Order__c</members>
 		<members>Soft_Drink__c</members>
 		<name>CustomTab</name>

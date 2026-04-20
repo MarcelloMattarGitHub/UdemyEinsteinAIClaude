@@ -83,6 +83,15 @@ All 4 Lead layouts are now tracked locally under `layouts/`:
 
 9 profiles are tracked locally under `profiles/`: Admin, Standard, Custom: Sales/Support/Marketing, Read Only, SolutionManager, ContractManager, MarketingProfile. Field permissions for new Lead fields must be added to all of them.
 
+### Flows (`flows/`)
+
+| Flow | Trigger | What it does |
+|---|---|---|
+| `Opp_Prospecting_Follow_Up_Task` | Opportunity Create, Stage = Prospecting | Creates two Tasks (due 3 days out): one linked to the Opportunity, one to the related Account |
+| `Create_a_Task_Flow` | AutoLaunched (input vars) | Generic task creator; accepts `relatedId` and `subject` input variables |
+| `Initiate_Return` | — | Order return initiation |
+| `Update_Soft_Drink_Flow` | — | Updates Soft Drink records |
+
 ### Key Patterns
 
 - Einstein Copilot actions are Apex classes with `@InvocableMethod` — they receive structured input/output lists and are registered as copilot actions in the org.
